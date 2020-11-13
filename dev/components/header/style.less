@@ -1,0 +1,162 @@
+.header{
+    padding-top: 16px;
+    padding-bottom: 120px;
+    &__left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo{
+        width: 82px;
+        height: 16px;
+    }
+    &__logo svg{
+        width: 82px;
+        height: 16px;
+        fill: #2282C3;
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 149px;
+    }
+    &__item{
+        list-style: none;
+        margin-right: 30px;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__link{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        font-feature-settings: 'liga' off;
+        /* Черный */
+        color: #272839;
+        text-decoration: none;
+    }
+    &__lang svg{
+        width: 30px;
+        height: 30px;
+        fill: @blueColor;
+    }
+    &__lang{
+        cursor: pointer;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 16px;
+        /* identical to box height, or 89% */
+        color: #2282C3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 32px;
+    }
+    &__login{
+
+    }
+    &-mobile{
+        display: none;
+        width: 100%;
+        
+        &__burger{
+            width: 20px;
+            height: 20px;
+            & svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &__logo{
+            width: 86px;
+            height: 20px;
+            & svg{
+                width: 86px;
+                height: 20px;
+            }
+        }
+        &__profile{
+            width: 20px;
+            height: 20px;
+            & svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+.header{
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media (max-width: 900px) {
+    .header{
+        &__list{
+            margin-left: 40px;
+        }
+    }
+    .intro{
+        &__title{
+            line-height: 1.2;
+        }
+        &__info{
+            width: 50%;
+        }
+        &__img{
+            width: 50%;
+            max-width: 460px;
+            object-fit: contain;
+            margin-top: 70px;
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        background-position: top;
+        background-size: cover;
+        padding-bottom: 40px;
+        background-image: url('../img/intro-bg-768.jpg');
+        &-mobile{
+            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__left{
+            display: none;
+        }
+        &__right{
+            display: none;
+        }
+
+    }
+
+    
+}
+@media (max-width: 500px) {
+    .header{
+        background-position: top;
+        background-image: url('../img/bg-intro-360.jpg');
+        background-size: cover;
+        padding-bottom: 40px;
+    }
+
+    
+}

@@ -1,0 +1,167 @@
+.manual{
+    &__text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: @greyColor;
+        margin-bottom: 50px;
+        max-width: 945px;
+        width: 100%;
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 42px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: @blackColor;
+        margin-bottom: 30px;
+    }
+    &__title{
+        margin-bottom: 47px;
+    }
+    &__btn{
+        max-width: 191px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 40px;
+    }
+    &__steps{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+        & span{
+            display: block;
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+            background: @blueColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 52px;
+            line-height: 61px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #FBFBFB;
+            position: relative;
+            border: 5px solid @blueColor;
+            &:after{
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                height: 5px;
+                width: 165%;
+                right: -165%;
+                background: @blueColor;
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+    }
+     
+}
+.manual__steps .manual__steps_active{
+    background: transparent;
+    color: black;
+}
+.section_manual{
+    // background-image: url('../img/manual.jpg');
+    // background-repeat: no-repeat;
+    // background-position-x: -3%;
+    padding-top: 49px;
+    padding-bottom: 69px;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:  89%;
+        height: 100%;
+        background: linear-gradient(90deg, #E8EAF3 0%, #E3F3F8 100%);
+        clip-path: polygon(0% 0%, 56% 0, 100% 100%, 0 100%);
+
+
+        z-index: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .manual__steps{
+        & span{
+            border: none;
+            background: transparent;
+            color: @blackColor;
+            
+            &:after{
+                display: none;
+            }
+        }
+    }
+    .manual__steps .manual__steps_active{
+        background: #2282C3;
+        color: @whiteColor;
+    }
+    .section_manual{
+        &:before{
+            width: 100%;
+            clip-path: polygon(0% 0%, 50% 0, 100% 100%, 0 100%);
+        }
+    }
+}
+@media (max-width: 500px) {
+    .manual__steps{
+        & span{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 42px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            color: #272839;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .manual{
+        &__title{
+            font-size: 24px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        &__subtitle{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            /* Черный */
+            color: @blackColor;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: @greyColor;
+            margin-bottom: 24px;
+        }
+        &__btn{
+            width: 100%;
+            max-width: unset;
+        }
+    }
+    .section_manual{
+        padding-bottom: 40px;
+    }
+}

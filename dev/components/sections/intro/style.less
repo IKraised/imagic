@@ -1,0 +1,129 @@
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 54px;
+    &__info{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    &__title{
+        max-width: 455px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 19px;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: @greyColor;
+        max-width: 455px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        padding: 30px 40px;
+        
+    }
+}
+@media (max-width: 768px) {
+    .intro{
+        margin-top: 40px;
+        position: relative; 
+        &__info{
+            width: 100%;
+        }
+        &__img{
+            position: absolute;
+            bottom: 0%;
+            right: 0;
+            margin-top: 0;
+            max-width: 365px;
+        }
+        &__title{
+            max-width: 500px;
+            margin-top: 0px;
+        }
+        &__text{
+            max-width: 500px;
+        }
+    }
+    .check{
+        // max-width: 768px;
+        // width: 100%;
+        z-index: 1;
+        // margin-top: 0px;
+        margin-top: 168px;
+        margin-bottom: 0px;
+    }
+   
+}
+@media (max-width: 500px) {
+    .intro{
+        &__title{
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            color: @blackColor;
+            margin-bottom: 30px;
+        }
+        &__text{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: @greyColor;
+            margin-bottom: 30px;
+            max-width: 275px;
+            width: 100%;
+        }
+        &__btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            padding: 20px;
+        }
+        &__img{
+            width: 115px;
+            top: 60px;
+        }
+    }
+    .check{
+        margin-top: 40px;
+        padding: 15px 15px;     
+    }
+   
+}
+@media (max-width: 380px) {
+    .intro{
+        &__title{
+            font-size: 23px;
+        }
+        &__text{
+            margin-bottom: 100px;
+        }
+        &__img{
+            top: 132px;
+        }
+    }
+    .check{
+        &__title{
+            font-size: 14px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        &__btn{
+            font-size: 14px;
+            padding: 10px;
+        }
+        .check__input input{
+            padding: 10px 10px;
+        }
+    }
+}

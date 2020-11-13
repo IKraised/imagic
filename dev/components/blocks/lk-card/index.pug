@@ -1,0 +1,38 @@
+.lk-card
+    .lk-card__top
+        .lk-card__website
+            .lk-card__img
+                img(src="img/ico-web.png", alt="")
+            .lk-card__title
+                span Гольфстрим
+            .lk-card__subtitle
+                span https://golfstream.shop
+        .lk-card__erase
+            +svg({
+                name: 'close'
+            })
+    .lk-card__center
+        .lk-card__info
+            .lk-card__index
+                span Индексация
+                +svg({
+                    name: 'question'
+                })
+            .lk-card__compression
+                span Сжатие
+                +svg({
+                    name: 'question'
+                })
+        .lk-card__text
+            span 7 дней назад
+            span 7 дней назад
+    .lk-card__bottom
+    .lk-card__btn
+        .lk-card__settings
+            +svg({
+                name: 'settings'
+            })
+        .lk-card__stat
+            +svg({
+                name: 'stat'
+            })

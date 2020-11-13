@@ -1,0 +1,51 @@
+.section.section_lk
+    .container
+        .settings
+            .settings__url
+                span URL сайта
+                +svg({
+                    name: 'question'
+                })
+                .settings__input
+                    span http://golfstream.shop
+                .settings__change
+                    span изменить URL
+            .settings__file
+                span Типы файлов, разрешенных к сжатию
+                +svg({
+                    name: 'question'
+                })
+                .settings__checkbox
+                    <label>
+                        <input type="checkbox">
+                        span
+                        span PNG
+                    </label>
+                .settings__checkbox
+                    <label>
+                        <input type="checkbox">
+                        span
+                        span JPG
+                    </label>
+                .settings__checkbox
+                    <label>
+                        <input type="checkbox">
+                        span
+                        span JPEG
+                    </label>
+            .settings__save
+                .settings__text
+                    span Сохранять оригиналы изображений до сжатия
+                    +svg({
+                        name: 'question'
+                    })
+                .settings__checkbox
+                    <label>
+                        <input type="checkbox">
+                        span
+                    </label>
+            .settings__all
+                span расширенные настройки
+            .settings__btn.button
+                span Сохранить
+        include ../../blocks/lk-mytariff/index.pug

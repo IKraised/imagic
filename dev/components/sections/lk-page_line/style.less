@@ -1,0 +1,130 @@
+.lk__grid{
+    & .lk-line:nth-child(3n+3){
+        background: transparent;
+    }
+}
+.lk-column{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+        color: @greyColor;
+        &:first-child{
+            margin-left: 47px;
+        }
+        &:nth-child(2){
+            margin-left: 178px;
+            
+        }
+        &:last-child{
+            margin-left: 75px;
+        }
+        & svg{
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .lk-line__burger{
+        display: block;
+        & svg{
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .lk-line__center{
+        display: none;
+    }
+    .lk-line{
+        justify-content: space-between;
+    }
+    .lk-line__website{
+        margin-right: 0px;
+        padding-left: 32px;
+    }
+    .lk-line{
+        position: relative;
+    }
+    .lk-line__indicator{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 13px;
+    }
+    .lk-column{
+        display: none;
+    }
+    .lk-view__btn{
+        display: none;
+    }
+    .lk-view__show{
+        display: none;
+    }
+    .lk-view{
+        justify-content: flex-start;
+    }
+    .lk-view__sort{
+        margin-right: 20px;
+    }
+    .lk-view__search{
+        width: 100%;
+        & input{
+            width: 100%;
+        }
+    }
+    .lk-warning__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+        color: #272839;
+    }
+}
+@media (max-width: 500px) {
+    .lk-line__title{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        /* identical to box height */
+        color: #6D6D6D;
+    }
+    .lk-line__subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        color: #6D6D6D;
+    }
+    .lk-line__settings{
+        display: none;
+    }
+    .lk-line__erase{
+        display: none;
+    }
+    .lk-line__stat{
+        display: none;
+    }
+    .lk-line__btn, .lk-line__right{
+        justify-content: flex-end;
+    }
+    .lk-view__sort{
+        margin-right: 10px;
+    }
+    .lk-view__sort {
+        font-size: 14px;
+        line-height: 10px;
+        /* identical to box height, or 71% */
+        color: #272839;
+
+    }
+}

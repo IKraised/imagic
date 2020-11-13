@@ -1,0 +1,103 @@
+.questions{
+    padding-top: 34px;
+    &__list{
+        margin-top: 40px;
+
+    }
+    &__item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid #E8E8EF;
+        margin-bottom: 16px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        
+    }
+    &__num{
+        font-size: 48px;
+        line-height: 55px;
+        text-transform: uppercase;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #CCCCCC;
+        margin-right: 40px;
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 14px;
+        color: @blackColor;
+        font-weight: 400;
+        width: 80%;
+    }
+    &__text{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: @greyColor;
+        width: 984px;
+        padding-left: 102px;
+    }
+}
+.questions__item_open .questions__subtitle{
+    color: @blueColor;
+}
+.questions__item:first-child .questions__num{
+    margin-right: 48px;
+}
+.questions__item_open{
+    background: linear-gradient(90deg, rgba(65, 85, 169, 0.1) 0%, rgba(7, 169, 217, 0.1) 100%), #FFFFFF;
+    padding-bottom: 79px;
+}
+.section_questions{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .questions{
+        &__num{
+            margin-right: 20px;
+        }
+        &__text{
+            padding: 0px;
+        }
+        
+    }
+    .questions__item:first-child .questions__num{
+        margin-right: 28px;
+    }   
+}
+@media (max-width: 500px) {
+    .questions{
+        &__subtitle{
+            max-width: 254px;
+            line-height: 1.1;
+        }
+        &__item{
+            padding: 30px 10px;
+        }
+        &__num{     
+            font-size: 24px;
+            line-height: 24px;
+        }
+        &__text{
+            padding: 0px;
+            font-size: 14px;
+            line-height: 16px;
+           
+        }
+        &__subtitle{
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+    .questions__item_open .questions__text{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+}

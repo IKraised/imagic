@@ -1,0 +1,41 @@
+header.header
+    .container.container_flex
+        .header__left
+            a(href="#").header__logo
+                +svg({
+                    name: 'logo'
+                })
+            ul.header__list
+                li.header__item
+                    a(href="#").header__link
+                        | Возможности
+                li.header__item
+                    a(href="#").header__link
+                        | О проекте
+                li.header__item
+                    a(href="#").header__link
+                        | Преимущества
+        .header__right
+            .header__lang
+                +svg({
+                    name: 'lang'
+                })
+                span en
+            .header__login.button
+                span Войти
+        .header-mobile
+            .header-mobile__burger
+                +svg({
+                    name: 'burger'
+                })
+            .header-mobile__logo
+                +svg({
+                    name: 'logo'
+                })
+            .header-mobile__profile
+                +svg({
+                    name: 'user'
+                })
+    
+    include ../sections/intro/index.pug
+include ../blocks/header-login/index.pug

@@ -1,0 +1,30 @@
+.section_lk .container{
+    position: relative;
+}
+.lk{
+    &__grid{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 770px;
+    }
+}
+@media (max-width: 1150px) {
+    .tariff-current{
+        position: unset;
+    }
+}
+@media (max-width: 800px) {
+    .tariff-current{
+        position: unset;
+    }
+    .lk-card{
+        max-width: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .lk-card{
+        max-width: unset;
+    }
+}

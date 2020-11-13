@@ -1,0 +1,124 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  font: inherit;
+  /* По дефолту, шрифтовые свойства, для этих элементов не наследуются */
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-align: left;
+  text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.container_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  min-height: 750px;
+}
+
+
+
+.title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 46px;
+  color: @blackColor;
+}
+
+
+
+.button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  /* identical to box height, or 89% */
+  color: #FBFBFB;
+  padding: 11px 24px;
+  background-color: @blueColor;
+  cursor: pointer;
+
+  &:hover {}
+}
+
+
+@media (max-width: 900px) {
+  .title{
+    font-size: 34px;
+    line-height: 1.2;
+  }
+}

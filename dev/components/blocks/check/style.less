@@ -1,0 +1,37 @@
+.check{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 90px;
+    background: linear-gradient(90deg, rgba(65, 85, 169, 0.1) 0%, rgba(78, 150, 208, 0.1) 100%);
+    padding: 20px 30px;
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: @blackColor;
+        margin-bottom: 26px;
+    }
+    &__input{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        & input{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: @blackColor;
+            width: 100%;
+            background: rgba(251, 251, 251, 0.9);
+            padding: 12px 20px;
+
+        }
+    }
+    &__btn{
+        padding: 11px 16px;
+    }
+}

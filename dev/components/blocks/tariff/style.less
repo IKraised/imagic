@@ -1,0 +1,86 @@
+.tariff{
+    &-card{
+        width: 370px;
+        background-color: @whiteColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    }
+    &__name{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 12px;
+        color: @greyColor;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    &__descr{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 70px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: @blackColor;
+        margin-bottom: 20px;
+        & span:last-child{
+            font-size: 24px;
+            line-height: 28px;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            /* Черный */
+            color: #272839;
+        }
+    }
+    &__price{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        /* Черный */
+        color: @blackColor;
+        margin-bottom: 40px;
+        & span:first-child{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            /* identical to box height */
+            text-decoration-line: line-through;
+            text-transform: uppercase;
+            font-feature-settings: 'pnum' on, 'lnum' on;
+            /* Черный */
+            color: @blackColor;
+        }
+    }
+    &__btn{
+        width: 200px;
+        padding: 15px 59px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.property{
+    &__item{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 12px;
+        /* identical to box height, or 75% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: @greyColor;
+        margin-bottom: 30px;
+    }
+    &__list{
+        margin-top: 36px;
+        margin-bottom: 51px;
+    }
+}
+
